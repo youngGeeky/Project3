@@ -1,0 +1,392 @@
+body{
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.placeholder{
+    box-sizing: border-box;
+    background-color: white;
+    width: 320px;
+    height: 350px; /* 350 */
+    border-radius: 5px;
+}
+
+.logo-holder {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mail-div-contain {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.img-language-change{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    margin-left: -20px;
+}
+
+.img-language-change img{
+    width: 64px;
+    height: 20px;
+}
+
+.logo-holder img{
+    height: 50px;
+    line-height: 24.375px;
+    margin-bottom: 3.75px;
+    margin-left: 27.03125px;
+    margin-right: 27.046875px;
+    margin-top: 0;
+    min-height: 50.000099px;
+    max-width: 100%;
+    width: 220.921875px;
+}
+
+.div-input-mail{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.div-input-mail button{
+    align-items: flex-start;
+    appearance: button;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(255, 255, 255);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(255, 255, 255);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(255, 255, 255);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-style: none;
+    border-top-width: 0px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-size-adjust: none;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
+    font-weight: 400;
+    height: 38px;
+    letter-spacing: normal;
+    line-height: 17.25px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    min-width: 0px;
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    outline-width: 0px;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0px;
+    text-align: center;
+    text-indent: 0px;
+    text-rendering: optimizelegibility;
+    text-shadow: none;
+    text-transform: none;
+    width: 275px;
+    word-spacing: 0px;
+    writing-mode: horizontal-tb;
+    -webkit-box-direction: normal;
+    -webkit-box-shadow: none;
+    -webkit-font-smoothing: antialiased;
+}
+.bDiv{
+    background-color: rgb(78, 39, 130);
+    border-bottom-left-radius: 19.00005px;
+    border-bottom-right-radius: 19.00005px;
+    border-top-left-radius: 19.00005px;
+    border-top-right-radius: 19.00005px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    height: 38px;
+    line-height: 24.375px;
+    margin-bottom: 7.5px;
+    margin-top: 7.5px;
+    max-width: 320.000092px;
+    position: relative;
+    text-align: center;
+    text-rendering: optimizelegibility;
+    width: 275px;
+    -webkit-box-direction: normal;
+    -webkit-font-smoothing: antialiased;
+}
+.input-label-mail{
+    box-sizing: border-box;
+    color: rgb(68, 68, 68);
+    cursor: default;
+    display: block;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    height: 52px;
+    line-height: 24.375px;
+    max-width: 320.000092px;
+    position: relative;
+    text-rendering: optimizelegibility;
+    width: 320px;
+    -webkit-box-direction: normal;
+    -webkit-font-smoothing: antialiased
+}
+
+.input-label-mail input{
+    appearance: none;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    border-bottom-color: rgb(68, 68, 68);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(68, 68, 68);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(68, 68, 68);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(68, 68, 68);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-style: none;
+    border-top-width: 0px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: rgb(68, 68, 68);
+    cursor: auto;
+    display: block;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-size-adjust: none;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
+    font-weight: 400;
+    height: 52px;
+    letter-spacing: normal;
+    line-height: 24.375px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    min-width: 0px;
+    outline-color: rgb(68, 68, 68);
+    outline-style: none;
+    outline-width: 0px;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-bottom: 0px;
+    padding-left: 22.5px;
+    padding-right: 22.5px;
+    padding-top: 15px;
+    text-align: start;
+    text-indent: 0px;
+    text-rendering: optimizelegibility;
+    text-shadow: none;
+    text-transform: none;
+    transition-duration: 0.4s;
+    transition-property: background-color, opacity;
+    width: 320px;
+    word-spacing: 0px;
+    writing-mode: horizontal-tb;
+    -webkit-box-direction: normal;
+    -webkit-box-shadow: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-rtl-ordering: logical;
+}
+
+.placeholder-text{
+    box-sizing: border-box;
+    color: rgb(173, 169, 178);
+    cursor: default;
+    display: block;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12.00015px;
+    font-weight: 700;
+    height: 34px;
+    left: 22.5px;
+    line-height: 19.500242px;
+    margin-right: 15px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 7.5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 7.5px;
+    pointer-events: none;
+    position: absolute;
+    right: 22.5px;
+    text-overflow: ellipsis;
+    text-rendering: optimizelegibility;
+    top: 0px;
+    transition-duration: 0.1s;
+    transition-property: color, transform, font-weight, transform;
+    transition-timing-function: ease-in-out;
+    white-space: nowrap;
+    width: 260px;
+    -webkit-box-direction: normal;
+    -webkit-font-smoothing: antialiased
+}
+
+.logo-holder h2{
+    font-size: 22.0002px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 430px;
+    height: 37px;
+    color: rgb(78, 39, 130);
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    line-height: 26.40024px;
+    margin: 0;
+    padding-bottom: 5.50005px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 5.50005px;
+    text-align: center;
+    text-rendering: optimizelegibility;
+}
+
+.div-section-mail{
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-name: none;
+    animation-play-state: running;
+    animation-timing-function: ease;
+    border-bottom-color: rgb(207, 203, 212);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(207, 203, 212);
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-right-color: rgb(207, 203, 212);
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-top-color: rgb(207, 203, 212);
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    color: rgb(68, 68, 68);
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    height: 54px;
+    justify-content: center;
+    line-height: 24.375px;
+    margin-top: -1px;
+    min-height: 52.000198px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    text-rendering: optimizelegibility;
+    width: 320px;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+.error-message-div{
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-message-div img{
+    width: 290px;
+    height: 70px;
+}
+
+.div-input-password{
+    display: none;
+}
